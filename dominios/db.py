@@ -15,7 +15,7 @@ class Cliente(Base):
     cpf = Column(VARCHAR(11), nullable=False)
 
     def __repr__(self):
-        return '%s' % (self.nome)
-
+        #return '%s' % (self.nome)
+        return f'{self.nome}'
 
 Base.metadata.create_all(engine)
